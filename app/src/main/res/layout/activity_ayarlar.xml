@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarActivity">
+
+    <Button
+        android:id="@+id/minusDownLimitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/eksi"
+        app:layout_constraintEnd_toStartOf="@+id/downLimitText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusDownLimitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="@string/artı"
+        app:layout_constraintBaseline_toBaselineOf="@+id/downLimitText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/downLimitText" />
+
+    <Button
+        android:id="@+id/minusUpLimitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/eksi"
+        app:layout_constraintBottom_toBottomOf="@+id/plusUpLimitbtn"
+        app:layout_constraintEnd_toStartOf="@+id/upLimitText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plusUpLimitbtn" />
+
+    <Button
+        android:id="@+id/plusUpLimitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/artı"
+        app:layout_constraintBottom_toTopOf="@+id/plusDownLimitbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/upLimitText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/upLimitText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="71dp"
+        android:text="ÜstLimit"
+        app:layout_constraintEnd_toStartOf="@+id/plusUpLimitbtn"
+        app:layout_constraintStart_toEndOf="@+id/minusUpLimitbtn"
+        app:layout_constraintTop_toTopOf="@+id/minusUpLimitbtn" />
+
+    <TextView
+        android:id="@+id/downLimitText"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="63dp"
+        android:text="AltLimit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/minusDownLimitbtn"
+        app:layout_constraintEnd_toStartOf="@+id/plusDownLimitbtn"
+        app:layout_constraintStart_toEndOf="@+id/minusDownLimitbtn" />
+
+    <CheckBox
+        android:id="@+id/titresimBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/Titreşim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusDownLimitbtn" />
+
+    <CheckBox
+        android:id="@+id/sesBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="66dp"
+        android:text="@string/Ses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/downLimitText"
+        app:layout_constraintTop_toBottomOf="@+id/plusDownLimitbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

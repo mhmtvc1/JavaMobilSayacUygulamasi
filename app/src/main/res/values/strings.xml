@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JavaMobilSayaçUygulamasi</string>
+    <string name="uygulama_ismi">mobil uygulama</string>
+    <string name="artı">+</string>
+    <string name="eksi">-</string>
+    <string name="sayaç">Saymaya başla</string>
+    <string name="btnsettings">Ayarlar</string>
+    <string name="Titreşim">Titreşim</string>
+    <string name="Ses">Ses</string>
+
+</resources>
